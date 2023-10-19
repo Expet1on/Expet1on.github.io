@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap');
+
+.body {
+    font-family: Open Sans, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.page-header {
+
+}
+
+.page-header__nav-link {
+    margin: 0 25px;
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    text-decoration: none;
+}
+
+.page-main {
+
+}
+
+.page-footer {
+
+}
