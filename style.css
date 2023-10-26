@@ -8,8 +8,59 @@
     line-height: normal;
 }
 
-.page-header {
+a {
+    text-decoration: none;
+}
 
+.page-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+   
+}
+
+.page-header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(222, 222, 222, 0.50);
+     @support (backdrop-filter: blur(10px)) {
+        (backdrop-filter: blur(10px)):
+        background-color: rgba(222, 222, 222, 0.50);
+    }
+}
+
+.page-header__container{
+    box-sizing: border-box;
+    position: relative;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 1414px;
+    width: 100%;
+}
+
+.page-header__logo {
+    margin-right: 237px;
+    display: inline-block;
+    width: 202px;
+    height: 147px;
+
+}
+
+.page-header__logo-img{
+    width: 100%;
+    height: 100%;
+}
+
+.page-header__nav {
+    display: inline-block;
+    margin-right: 230px;
+    padding-top: 61px;
 }
 
 .page-header__nav-link {
@@ -19,8 +70,77 @@
     font-size: 18px;
     line-height: 25px;
     text-decoration: none;
+    
 }
 
+
+
+
+.page-header__user-btn {
+    box-sizing: border-box;
+    padding: 15px 40px;
+    border: 1px solid #1F1E1E;
+    background-color: transparent;
+    font-size: 16px;
+    line-height: normal;
+    font-weight: 600;
+    color: #1F1E1E;
+}
+
+.home {
+    padding-top: 147px;
+}
+
+.main-header__title,
+.main-header__text{
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Lora", sans-serif;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: normal;
+    color: #1F1E1E;
+}
+
+.main-header__title{
+    margin: 0 0 70px;
+}
+
+.main-header__text{
+    margin: 0 auto;
+    min-width: 948px;
+    width: 100%;
+}
+
+.main-header__picture{
+    display: block;
+    margin-bottom: 70px;
+    position: relative;
+    width: 100%;
+}
+
+.main-header__picture::before{
+    content: '';
+    display: block;
+    width: 100%;
+}
+
+
+
+.main-header__img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.main-header{
+    padding: 100px 0;
+}
 .page-main {
 
 }
