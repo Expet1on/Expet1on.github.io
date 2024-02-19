@@ -38,11 +38,13 @@
     padding-left: 40px;
     padding-right: 40px;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .page-header_logo{
     display: inline-block;
-    margin-right: 237px;
     width: 202px;
     height: 147px;
 }
@@ -54,7 +56,7 @@
 
 .page-header_nav {
     display: inline-block;
-    margin-right: 230px;
+    
 }
 .page-header_nav-link {
     margin: 0 25px;
@@ -136,6 +138,128 @@
     padding: 100px 0;
 }
 
+.events {
+    padding-top: 147px;
+
+}
+
+.events__container {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1414px;
+    box-sizing: border-box;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+.events__title {
+    align-self: center;
+}
+
+.title {
+    margin: 0 0 150px;
+    box-sizing: border-box;
+    padding: 7px 45px 9px;
+    max-width: 624px;
+    width: 100%;
+    text-align: center;
+    background-color: #1f1e1e;
+    color: white;
+    font-family: 'Lora';
+    font-weight: 500;
+}
+
+.listing {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 120px 60px;
+}
+
+.listing__card-event {
+    max-width: 405px;
+    width: calc(33.333% - 40px);
+}
+
+
+.card-event {
+    box-sizing: border-box;
+}
+
+.card-event__link {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-event__link:hover .card-event__title {
+    color: #A51505;
+    text-decoration-color: #A51505;
+}
+
+.card-event__picture {
+    position: relative;
+    display: block;
+    margin-bottom: 25px;
+}
+
+.card-event__picture::before {
+    content: '';
+    display: block;
+    width: 100%;
+    padding-top: 107.16%;
+}
+
+.card-event__picture-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-event__title {
+    margin: 0 0 auto;
+    min-height: 64px;
+     text-decoration: underline;
+    text-decoration-color: transparent;
+    font-size: 24px;
+    font-family: 'Open sans';
+    font-weight: 700;
+    font-style: normal;
+    line-height: normal;
+    color: #1f1e1e;
+    transition: color 0.2s, text-decoration-color 0.23s;
+}
+
+
+.card-event__text {
+    font-family: 'Open Sans';
+    margin: 15px 0;
+    color: #1f1e1e;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card-event__time {
+    display: block;
+    margin-top: auto;
+    min-height: 19px;
+    font-family: 'Open sans';
+    font-size: 14px;
+    font-weight: 300;
+    color: #1f1e1e;
+    
+}
 
 .page-footer {
 
