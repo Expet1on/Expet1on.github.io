@@ -1,29 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leni Art</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
-</head>
+@@include('blocks/head.html')
+
 <body class="body">
-   <header class="page-header">
-        <div class="page-header_container">
-            <a href="#" class="page-header_logo">
-                <img src="img/logo (1).svg" class="page-header_logo-img">
-            </a>
-            <nav class="page-header_nav">
-                <a href="#" class="page-header_nav-link">Мероприятия</a>
-                <a href="#" class="page-header_nav-link">Блог</a>
-                <a href="#" class="page-header_nav-link">О нас</a>
-                <a href="#" class="page-header_nav-link">Контакты</a>
-            </nav>
-            <a href="#" class="btn page-header_user-btn">Войти</a>
-        </div>
-    </header>
+    @@include('blocks/page-header.html')
     
    <main class="main">
     <div class="home">
@@ -45,6 +26,6 @@
         <div class="doit home_doit"></div>
     </div>
    </main>
-   <footer class="page-footer"></footer>
+   @@include('blocks/page-footer.html')
 </body>
 </html>
