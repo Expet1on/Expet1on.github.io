@@ -1,6 +1,5 @@
 import gulp from "gulp";
 import {deleteAsync}  from "del";
-
 export const reset = () => {
     return deleteAsync(app.path.clean);
 }
@@ -45,7 +44,7 @@ const resources = {
 
 
 function clean() {
-    return del("dist");
+    return deleteAsync("dist");
 }
 
 function includeHtml() {
@@ -112,9 +111,9 @@ function jsCopy() {
 function copy() {
     return gulp
         .src(resources.static, {
-            base: `src`
+            base: "src"
         })
-        .pipe(gulp.dest(`dist/`));
+        .pipe(gulp.dest("dist/"));
 }
 
 function images() {
@@ -193,3 +192,4 @@ export {
     serve,
     start
 };
+

@@ -29,5 +29,9 @@
         "build": "gulp build",
         "serve": "gulp serve",
         "start": "gulp start"
-    }
+    },
+    "dependencies": { 
+    "gulp-cli": "^2.3.0" 
+  }
 }
+
