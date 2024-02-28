@@ -1,8 +1,6 @@
 import gulp from "gulp";
-import {deleteAsync}  from "del";
-export const reset = () => {
-    return deleteAsync(app.path.clean);
-}
+import del from "del";
+
 
 import include  from "gulp-file-include";
 import plumber from "gulp-plumber";
@@ -44,7 +42,7 @@ const resources = {
 
 
 function clean() {
-    return deleteAsync("dist");
+    return del("dist");
 }
 
 function includeHtml() {
@@ -122,8 +120,8 @@ function images() {
         .pipe(
             imagemin([
                 imagemin_gifsicle({ interlaced: true }),
-                imagemin_mozjpeg({ quality: 100, progressive: true}),
-                imagemin_optipng({ optimizationlevel: 3})
+                imagemin_mozjpeg({ quality: 100, progressive: true }),
+                imagemin_optipng({ optimizationlevel: 3 })
             ])
         )
     .pipe(gulp.dest("dist/assets/images"));
@@ -192,4 +190,3 @@ export {
     serve,
     start
 };
-
