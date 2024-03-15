@@ -1,0 +1,90 @@
+.event-card {
+    display: flex;
+    width: 405px;
+    max-width: 100%;
+    min-width: 280px;
+    color: @black;
+
+    &__link {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-decoration: none;
+        &:active {
+            .event-card__title {
+                color: @red;
+                text-decoration-color: @red;
+            }
+        }
+    }
+
+
+    &:hover .event-card__title {
+        @media (hover: hover) {
+            color: #A51505;
+            text-decoration-color: #A51505;
+        }
+    }
+
+    &__picture {
+        position: relative;
+        display: block;
+        width: 100%;
+        margin: 0 0 25px;
+        font-size: 0;
+        text-decoration: none;
+        overflow: hidden;
+        &::after {
+            content: '';
+            display: block;
+            width: 100%;
+            padding-top: 107.16%;
+
+        }
+    }
+
+
+    &__picture-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__title {
+        margin: 0 0 auto;
+        min-height: 64px;
+         text-decoration: underline;
+        text-decoration-color: transparent;
+        font-size: 24px;
+        font-family: 'Open sans';
+        font-weight: 700;
+        font-style: normal;
+        line-height: normal;
+        color: #1f1e1e;
+        transition: color 0.2s, text-decoration-color 0.23s;
+    }
+
+    &__text {
+        font-family: 'Open Sans';
+        margin: 15px 0;
+        color: #1f1e1e;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: normal;
+    }
+    
+    &__time {
+        display: block;
+        margin-top: auto;
+        min-height: 19px;
+        font-family: 'Open sans';
+        font-size: 14px;
+        font-weight: 300;
+        color: #1f1e1e;
+        
+    }
+
+}
